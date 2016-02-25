@@ -1,3 +1,7 @@
+'''
+Author: Kristel Uiboaed
+'''
+
 import os
 import re
 from operator import itemgetter

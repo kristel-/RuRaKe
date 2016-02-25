@@ -1,3 +1,7 @@
+'''
+Author: Kristel Uiboaed
+'''
+
 import re
 import os
 import xml.etree.ElementTree as etree
