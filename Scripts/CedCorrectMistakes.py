@@ -125,13 +125,81 @@ def lemmaTypo(inputFile, errorFile):
                     continue
                 tree.write((re.sub(".xml", "", inputFile) + ".temp"), xml_declaration=True, encoding="utf-8")
 
+
 '''
-for f in myInput():    
-    print(f)
+Error correction function.
+Modify the incorrect lemma, pos, and form.
+Error input file format:
+incorrect lemma;incorrect pos;correct lemma;correct pos;correct form
+'''
+def lemmaPosMissingForm(inputFile, errorFile):
+    errorList = errors(errorFile)
+    
+    tree = etree.parse(inputFile)
+    root = tree.getroot()
+    lemmas = root.findall('./sisu/lause/sone[@liik]')
+    fake_root = etree.Element(None) # Create 'fake' root node
+    pi = etree.PI('xml-stylesheet', 'type="text/xsl" href="liivike_tekst.xsl"') # Add desired processing instructions.  Repeat as necessary.
+    pi.tail = "\n"
+    fake_root.append(pi)
+    fake_root.append(root) # Add real root as last child of fake root
+    tree = etree.ElementTree(fake_root)
+    
+    for error in errorList:
+        for lemma in lemmas:
+            if "lemma" in lemma.attrib and "liik" in lemma.attrib and "vorm" not in lemma.attrib:
+                if lemma.attrib["lemma"] == error[0] and lemma.attrib["liik"] == error[1]:
+                    print(lemma.attrib)
+                    lemma.set("lemma", error[2]) # set to the right lemma
+                    lemma.set("liik", error[3]) # set to the right pos
+                    lemma.attrib["vorm"] = error[4] # add morph attribute
+                    print(lemma.attrib)
+                    outputFile = (re.sub(".xml", "", inputFile) + ".temp")
+                else:
+                    continue
+                tree.write((re.sub(".xml", "", inputFile) + ".temp"), xml_declaration=True, encoding="utf-8")
+
+
+
+'''
+Error correction function.
+Modify the incorrect lemma, pos, and form.
+Error input file format:
+incorrect lemma;incorrect pos;correct lemma;correct pos;correct form
+'''
+def posFormMistakes(inputFile, errorFile):
+    errorList = errors(errorFile)
+    
+    tree = etree.parse(inputFile)
+    root = tree.getroot()
+    lemmas = root.findall('./sisu/lause/sone[@liik]')
+    fake_root = etree.Element(None) # Create 'fake' root node
+    pi = etree.PI('xml-stylesheet', 'type="text/xsl" href="liivike_tekst.xsl"') # Add desired processing instructions.  Repeat as necessary.
+    pi.tail = "\n"
+    fake_root.append(pi)
+    fake_root.append(root) # Add real root as last child of fake root
+    tree = etree.ElementTree(fake_root)
+    
+    for error in errorList:
+        for lemma in lemmas:
+            if "lemma" in lemma.attrib and "liik" in lemma.attrib and "vorm" not in lemma.attrib:
+                if lemma.attrib["lemma"] == error[0] and lemma.attrib["liik"] == error[1]:
+                    print(lemma.attrib)
+                    lemma.set("lemma", error[2]) # set to the right lemma
+                    lemma.set("liik", error[3]) # set to the right pos
+                    lemma.attrib["vorm"] = error[4] # add morph attribute
+                    print(lemma.attrib)
+                    outputFile = (re.sub(".xml", "", inputFile) + ".temp")
+                else:
+                    continue
+                tree.write((re.sub(".xml", "", inputFile) + ".temp"), xml_declaration=True, encoding="utf-8")
+
+#for f in myInput():    
+#    print(f)
     #wrongPosForLemma(f, "pos-mistakes.csv")
-    lemmaTypo(f, "lemma-mistakes.csv")
-moveFiles('destinationPath', 'destinationFolder')
-'''
+#    lemmaFormMistakes(f, "lemma-pos-form-mistakes.csv")
+#moveFiles('destinationPath', 'destinationFolder')
+
 
 
 
