@@ -1,4 +1,4 @@
-*v. 29-2-16*
+*v. 12-12-16*
 
 Lisatud Exceli failis (*Atlase-geoinfo-29-2-16*) on viis töölehte:
 
@@ -29,7 +29,7 @@ Lisatud Exceli failis (*Atlase-geoinfo-29-2-16*) on viis töölehte:
 - Dok: info täidetavate lahtrite kohta. 
 
 
-Iga küla kohta on tehtud tabelis eraldi rida. Keelejuhtide ees- ja perenimede jaoks eraldi veerud, mitme korral on need eraldatud samas lahtris semikooloniga. Samamoodi on tehtud sünniaastatega. Kui VMA-s nimetatud küla/asulat enam ei ole, on nende asemel märgitud praegune lähiküla (koos vastavate EHAK-i tunnustega). Kui osadel VMA kogumispunktidel puuduvad EHAK-i andmed, siis neid külasid/asulaid samuti tänapäeval enam pole. Nendele küladele ei leitud andmebaasidest lähikülasid, ent need on siiski punktidena aluskaardil (kogumispuntkid_utf8_97.shp) olemas ning sestap ka VMA atribuuttabelis esindatud. 
+Iga küla kohta on tehtud tabelis eraldi rida. Keelejuhtide ees- ja perenimede jaoks eraldi veerud, mitme korral on need eraldatud samas lahtris semikooloniga. Samamoodi on tehtud sünniaastatega. Kui VMA-s nimetatud küla/asulat enam ei ole, on nende asemel märgitud praegune lähiküla (koos vastavate EHAK-i tunnustega). Kui osadel VMA kogumispunktidel puuduvad EHAK-i andmed, siis neid külasid/asulaid samuti tänapäeval enam pole või ei asu need Eesti territooriumil. Nendele küladele ei leitud andmebaasidest lähikülasid, ent need on siiski punktidena aluskaardil (kogumispuntkid_utf8_97.shp) olemas ning sestap ka VMA atribuuttabelis esindatud. 
 
 
 Algallikate info
