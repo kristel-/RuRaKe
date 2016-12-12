@@ -1,5 +1,5 @@
 
-*v. 29-02-16*
+*v. 12-12-16*
 
 ##Kogumispunktid 
 
@@ -7,11 +7,8 @@ Kogumispunktide Shapefile kogumispunktid_utf8_97 koosneb 858 punktobjektist. Atr
 
 ##Saareste logi
 
-Logis (*Saareste-VMA-logifail*) on dokumenteeritud kõik muudatused, mida tehti tabeliga VMA-andmed. Muudatuste hulgas on nii külakoodide muutmist, õigete (lähi)külade märkimist (juhul kui Saareste kogumispunkti tänapäeval enam polnud) kui ka lihtsalt trükivigade parandamist. Lisaks on logis kirjas ka lahendamata probleemid ja hetke tööseis. 
+Logis (*Saareste-VMA-logifail*) on dokumenteeritud kõik muudatused, mida tehti tabeliga VMA-andmed, ja tööde progress. Muudatuste hulgas on nii külakoodide muutmist, õigete (lähi)külade märkimist (juhul kui Saareste kogumispunkti tänapäeval enam polnud) kui ka lihtsalt trükivigade parandamist. Lisaks on logis kirjas ka lahendamata probleemid. 
 
-##Valmis kaardid 
-
-Valmis kaartide kaustas on kuude kaupa jaotatud juba digiteeritud kaardid. Kaardid ei ole digiteeritud samas järjekorras, mis VMA-s. Valmis kaartide kaustas on ka aluskaart kogumispunktid_utf8_97, mida kasutatakse andmete sisestamiseks. Iga konkreetse VMA kaardi jaoks on tehtud oma kaust. Selles kaustas on kõik vajalikud failid, et see GIS-is avada. Niisamuti on kaasas skaneeritud pilt paberkaardist, georefereeritud pildifail (koos georefereeringupunktidega) ja pildifail digiteeritud kaardist (formaadis X_digi.jpg), mida on hea kasutada lihtsalt eelvaatena kaardist, kui andmeid sirivida. Sümbolkaartidel on kaasas ka .qml fail, mis sisaldab Saareste originaalkujundusele lähedasi sümboleid. Hetkel on siin avalikult kättesaadavad mõned näiteeksemplarid. Tervet kogu säilitame eesti ja üldkeeleteaduse instituudis eesti murrete ja sugulaskeelte arhiivis.
 
 ##VMA-andmed 
 
@@ -21,3 +18,6 @@ VMA-andmed fail (*Atlase-geoinfo-29-2-16*) koosneb neljast atribuuttabelist: VMA
 
 VMA-andmete-sisestusskeemi failis (*Saareste-VMA-sisestusskeem*) on kirjeldatud VMA-andmete faili koostamise põhimõtteid. VMA-andmete-sisestusskeemi failis on esitatud info VMA-andmete tabelite kohta (VMA, Eesti kihelkonnad, Asustusyksused, Dok). Samuti on failis esitatud andmete algallikate info. 
 
+##Näidiskaardid 
+
+Lisatud on mõned pildifailid digiteeritud ja originaalkaartidest. 
