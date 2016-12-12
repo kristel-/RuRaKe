@@ -1,8 +1,11 @@
 
-*v. 29-2-16*
+*v. 12-12-16*
 
+### Väikese murdeatlase digiteeritud kaardid (12.12.2916) 
 
-### Väikse murdeatlase digiteeritud kaardid
+Digiteeritud kõik peale kaartide 23, 41, 48, 87, 95, 110, 117, mida polnud tehniliste võimaluste tõttu praegu digiteerida. 
+
+### Väikse murdeatlase digiteeritud kaardid (29.02.2016)
 
 Tsitaatkaarte tehtud 8/20: KAEV:KAEVU; KARTULID; KELLEGILE; KODUNT, KOTTU; KÜLJES; LÄHEVAD; PRAOKIL, POIKVEL; SAGEDASTI.
 
